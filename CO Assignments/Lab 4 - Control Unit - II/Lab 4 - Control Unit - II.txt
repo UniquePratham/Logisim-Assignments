@@ -1,0 +1,13 @@
+1. Implement a multibus computational system as shown in the attached file.
+2. Store the following Program in memory
+           LD A //AC <--Mem[A]
+           ADD B //AC<--AC + Memo[B]
+           ST C // Mem[C] <-- AC
+3. Store two 16-bit numbers in Memory Location A and B
+4. Implement a hardwired control unit for this multibus system.
+
+5. Now execute the program using your computational system after initializing PC with the starting address of the program.
+
+Note:
+For LD A, first read A into DR and then perform transfer operation in ALU
+For ADD B, first read B into DR and then perform ADD operation in ALU

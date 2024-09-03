@@ -1,0 +1,5 @@
+Use Logisim to implement a 4-bit ALU to perform the following set of operations:
+1. Set of Arithmetic Operations: ADD, ADD with Carry, Subtract, Subtract with Borrow, Increment, Decrement and Transfer
+2. Set of Logical Operations: Bitwise AND,  Bitwise OR, Bitwise XOR, COMPLEMENT, Selective SET, Selective CLEAR, Selective COMPLEMENT and MASK
+3. Set of Shift Operations: Arithmetic Left Shift (i.e. Multiply by 2) and 
+Arithmetic  Right Shift  (i.e. Divide by 2)

@@ -1,0 +1,12 @@
+1. Add the following components to a 16-bit common bus through a network of multiplexers.
+       2^12x16 ROM, 12 bit AR (Address Register), 16 bit PC (Program Counter) and 16 bit IR (Instruction Register)
+      The output of AR is also connected to the address line of ROM.
+2. Add two memory reference introductions in the ROM in two different locations - one with direct addressing mode and the other with indirect addressing mode.
+3. Generate the timing signals T0, T1 . . . T15 from the clock with a 4 bit sequence counter and a 4:16 decoder.
+4. Implement a hardware control unit to fetch an instruction from ROM to IR as per the following RTL (Register Transfer Language):
+         T0 : AR <-- PC
+         T1 : IR <-- ROM[AR], PC <-- PC + 1
+5. Check your implementation by fetching both the instructions with manual clock tick (i.e. initialize PC with the address of the instruction to fetch, then give 2 clock signals manually and check the content of IR).
+6. Now add a decoder to decode the fetched instruction as per the following RTL:
+        T2 : D0, D1 . . . D7 <-- Decode(IR[12,13,14]), I <-- IR[15], AR <-- IR[0..11]
+7. Check your implementation of the decoder for both the instructions.

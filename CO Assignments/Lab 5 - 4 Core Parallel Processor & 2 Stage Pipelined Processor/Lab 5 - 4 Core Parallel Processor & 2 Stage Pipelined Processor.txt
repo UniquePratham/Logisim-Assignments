@@ -1,0 +1,5 @@
+1. Store three Arrays A, B and C in a ROM. Initialize each of them with 12 integers.
+2. Implement a 4-core parallel processor to compute D[i] = (A[i]+B[i]) - C[i] and store D[i] in a RAM. What is the number of clock cycles needed for the computation?
+3. Implement a 2-stage pipelined processor to compute the same operation. What is the number of clock cycles needed for the computation?
+
+Note: You may use one instance of your ALU to implement each core or each stage i.e. you may use 4 ALU for the parallel processor and 2 ALU for the pipelined processor.
